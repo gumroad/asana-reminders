@@ -11,7 +11,7 @@ yesterday = datetime.datetime.now() - datetime.timedelta(1)
 modified_since_param = (datetime.datetime.now() - datetime.timedelta(90)).strftime('%Y-%m-%dT00:00:00Z')
 basic_auth = 'Basic ' + base64.b64encode(os.environ['ASANA_API_KEY'] + ':')
 
-overdue_comment_text = 'This is a friendly (automated) reminder that this task is past its due date. Please update it so that others have a better sense of when it\'ll will be complete. Thanks!'
+overdue_comment_text = 'This is a friendly (automated) reminder that this task is past its due date. Please update it so that others have a better sense of when it\'ll be complete. Thanks!'
 stale_comment_text = 'This is a friendly (automated) reminder that this task is getting stale. Please update it if it\'s still prioritized. Or kill it, that\'s cool too. Thanks!'
 
 
